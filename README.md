@@ -37,7 +37,7 @@ grunt backdrop
 ```
 Generate an optimized SVG-spritesheet and Less/Sass-file from your random SVG-files to include in your app.
 ```shell
-grunt backdrop
+grunt svg
 ```
 Generate all compatible webfonts and Less/Sass-file from your random SVG-files to include in your app.
 ```shell
