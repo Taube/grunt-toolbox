@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Demo</title>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	    <meta name="description" content="Responsive Images Demo">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Latest compiled and minified CSS 
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<style type="text/css">
+			.picture__webp,
+			.picture__no-webp {
+				display: none;
+			}
+			.webp .picture__webp,
+			.no-webp .picture__no-webp {
+				display: inline-block;
+			}
+		</style>
+		-->
+	</head>
+	<body>
+
+		<picture>
+			<source media="(min-width: 1300px)" srcset="dist/hero/start-lg.webp" type="image/webp">
+			<source media="(min-width: 1300px)" srcset="dist/hero/start-lg.png" type="image/png">
+			<source media="(min-width: 1000px)" srcset="dist/hero/start-md.webp" type="image/webp">
+			<source media="(min-width: 1000px)" srcset="dist/hero/start-md.png" type="image/png">
+			<source media="(min-width: 600px)" srcset="dist/hero/start-sm.webp" type="image/webp">
+			<source media="(min-width: 600px)" srcset="dist/hero/start-sm.png" type="image/png">
+			<source media="(min-width: 0px)" srcset="dist/hero/start-xs.webp" type="image/webp">
+			<source media="(min-width: 0px)" srcset="dist/hero/start-xs.png" type="image/png">
+			<img 
+				src="dist/hero/start-md.png"
+				alt="Responsive Fallback Image"
+				width="100%">
+		</picture>
+
+		<div class="container">
+
+			<div class="row">
+				<div class="col-xs-12">
+
+					<p>Above is a responsive hero image with the common bootstrap breakpoints with webp support.</p>
+
+					<h3>A responsive retina image with webp support</h3>
+				
+					<picture>
+						<source 
+							media="(max-width: 999px)"
+							srcset="dist/retina/screen-1-mobile.webp,
+									dist/retina/screen-1-mobile_2x.webp 2x,  
+									dist/retina/screen-1-mobile_3x.webp 3x"
+							type="image/webp">
+						<source 
+							media="(max-width: 999px)"
+							srcset="dist/retina/screen-1-mobile.png,
+									dist/retina/screen-1-mobile_2x.png 2x,  
+									dist/retina/screen-1-mobile_3x.png 3x"
+							type="image/png">
+						<source 
+							media="(min-width: 1000px)" 
+							srcset="dist/retina/screen-1-desktop.webp,
+									dist/retina/screen-1-desktop_2x.webp 2x,
+									dist/retina/screen-1-desktop_3x.webp 3x"
+							type="image/webp">
+						<source 
+							media="(min-width: 1000px)" 
+							srcset="dist/retina/screen-1-desktop.png,
+									dist/retina/screen-1-desktop_2x.png 2x,
+									dist/retina/screen-1-desktop_3x.png 3x"
+							type="image/png">
+
+						<img 
+							src="dist/retina/screen-1-desktop.webp" 
+							srcset="dist/retina/screen-1-desktop_2x.webp 2x,
+									dist/retina/screen-1-desktop_3x.webp 3x"
+							alt="Responsive Fallback Image"
+							width="298">
+					</picture>
+
+				</div>
+			</div>
+		</div>
+
+		<!--<script type="text/javascript" src="dist/modernizr.js"></script>-->
+	</body>
+</html>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>Google Play Icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="19.2147947%" y1="-35.1571758%" x2="69.3023416%" y2="93.5367562%" id="linearGradient-1">
+            <stop stop-color="#19A3B4" offset="0%"></stop>
+            <stop stop-color="#5BC3AF" offset="34.816763%"></stop>
+            <stop stop-color="#C9F7A6" offset="92.2336229%"></stop>
+            <stop stop-color="#D7FEA5" offset="100%"></stop>
+        </linearGradient>
+        <path d="M14.3671846,6.57085186 L2.39796864,0.196479032 C2.05858749,0.0166360885 1.74557148,-0.0252004874 1.4920173,0.0514093464 L11.2959254,9.54613874 L14.3671846,6.57085186" id="path-2"></path>
+        <linearGradient x1="-14.698314%" y1="-114.321644%" x2="74.8444046%" y2="114.156353%" id="linearGradient-4">
+            <stop stop-color="#FC227C" offset="0%"></stop>
+            <stop stop-color="#FEEB7B" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="28.1511582%" y1="-14.8137139%" x2="48.1878808%" y2="82.8944571%" id="linearGradient-5">
+            <stop stop-color="#0E4DA0" offset="0%"></stop>
+            <stop stop-color="#6BFED4" offset="100%"></stop>
+        </linearGradient>
+        <path d="M1.49145634,0.0514093464 C1.12739292,0.161705774 0.891789471,0.518674999 0.891789471,1.05874716 L0.894033314,18.0563503 C0.894033314,18.5904458 1.12234427,18.9419817 1.47574944,19.0593414 L11.2959254,9.54776874 L1.49145634,0.0514093464" id="path-6"></path>
+        <linearGradient x1="132.244588%" y1="16.465744%" x2="5.95853392%" y2="126.310354%" id="linearGradient-8">
+            <stop stop-color="#FC472E" offset="0%"></stop>
+            <stop stop-color="#FC472E" offset="0.331892433%"></stop>
+            <stop stop-color="#893CD8" offset="100%"></stop>
+        </linearGradient>
+        <path d="M1.47574944,19.0593414 C1.7309865,19.1430146 2.05017308,19.1038947 2.39796864,18.9191617 L14.3812086,12.5360956 L11.2959254,9.54776874 L1.47574944,19.0593414" id="path-9"></path>
+    </defs>
+    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Startpage-generic-v1" transform="translate(-169.000000, -3747.000000)">
+            <g id="Group-27" transform="translate(38.000000, 3735.000000)">
+                <g id="Group-25" transform="translate(67.000000, 12.000000)">
+                    <g id="Google-Play-Icon" transform="translate(64.000000, 0.000000)">
+                        <mask id="mask-3" fill="white">
+                            <use xlink:href="#path-2"></use>
+                        </mask>
+                        <use id="Fill-1" fill="url(#linearGradient-1)" xlink:href="#path-2"></use>
+                        <path d="M14.3828915,12.5360956 L18.4689284,10.3600503 C19.2974672,9.9172346 19.2974672,9.19677617 18.4689284,8.75504712 L14.3677456,6.57085186 L11.2959254,9.54613874 L14.3828915,12.5360956" id="Fill-2" fill="url(#linearGradient-4)"></path>
+                        <mask id="mask-7" fill="white">
+                            <use xlink:href="#path-6"></use>
+                        </mask>
+                        <use id="Fill-3" fill="url(#linearGradient-5)" xlink:href="#path-6"></use>
+                        <mask id="mask-10" fill="white">
+                            <use xlink:href="#path-9"></use>
+                        </mask>
+                        <use id="Fill-4" fill="url(#linearGradient-8)" xlink:href="#path-9"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
