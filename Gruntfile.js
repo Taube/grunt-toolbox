@@ -173,21 +173,39 @@ module.exports = function(grunt) {
 		webfont: {
 			icons: {
 				src: 'src/svg/*.svg',
-				dest: 'dist/fonts/'
+				dest: 'dist/fonts/',
+				options: {
+					hashes: false,
+					fontFilename: 'rbv2',
+					stylesheet: 'less',
+					templateOptions: {
+						baseClass: 'rbv2',
+						classPrefix: 'rbv2__'
+					},
+					types: 'eot,woff2,woff,ttf,svg'
+				}
 			},
-			options: {
-				hashes: false,
-				fontFilename: 'rbv2',
-				stylesheet: 'less',
-				templateOptions: {
-					baseClass: 'rbv2',
-					classPrefix: 'rbv2__'
-				},
-				types: 'eot,woff2,woff,ttf,svg'
+			icomoon: {
+				src: 'src/icomoon/*.svg',
+				dest: 'dist/icomoon/',
+				options: {
+					hashes: false,
+					fontFilename: 'rb',
+					stylesheet: 'less',
+					templateOptions: {
+						baseClass: 'rb',
+						classPrefix: 'rb-'
+					},
+					types: 'eot,woff2,woff,ttf,svg'
+				}
 			}
 		},
 		ttf2eot: {
-			icons: {
+			icomoon: {
+				src: 'dist/icomoon/*.ttf',
+				dest: 'dist/icomoon/'
+			},
+			rbv2: {
 				src: 'dist/fonts/*.ttf',
 				dest: 'dist/fonts/'
 			}
@@ -217,6 +235,10 @@ module.exports = function(grunt) {
 
 	grunt.registerTask('svg', ['svg_sprite:default']);
 	grunt.registerTask('font', ['webfont', 'ttf2eot']);
+
+	// Separate tasks for re-creating the icomoon icons and the new iconfont only
+	grunt.registerTask('icomoon', ['webfont:icomoon', 'ttf2eot:icomoon']);
+	grunt.registerTask('rbv2', ['webfont:icons', 'ttf2eot:rbv2']);
 
 	// Run a simple server to test the production images
 	grunt.registerTask('server', ['modernizr', 'express:dev', 'watch']);
